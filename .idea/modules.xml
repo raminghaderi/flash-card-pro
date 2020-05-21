@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/flashcardpro.iml" filepath="$PROJECT_DIR$/.idea/flashcardpro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../react-redux-tutorial/.idea/react-redux-tutorial.iml" filepath="$PROJECT_DIR$/../../react-redux-tutorial/.idea/react-redux-tutorial.iml" />
     </modules>
   </component>
 </project>

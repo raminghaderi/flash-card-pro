@@ -1,0 +1,45 @@
+body {
+    padding: 5%;
+    text-align: center;
+}
+
+h4 {
+    margin: 0;
+}
+
+.link-home {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.reveal-answer {
+    visibility: visible;
+    animation-name: fade-in;
+    animation-duration: 1s;
+}
+
+.hide-answer {
+    visibility: hidden;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 100
+    }
+}
