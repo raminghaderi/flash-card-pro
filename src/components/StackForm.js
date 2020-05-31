@@ -1,18 +1,18 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import { Form, FormGroup, FormControl, FormLabel, Button } from "react-bootstrap";
-import { connect } from "react-redux";
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import { Form, FormGroup, FormControl, FormLabel, Button } from 'react-bootstrap';
+import { connect } from 'react-redux';
 
-import { addStack } from "../actions";
+import { addStack } from '../actions';
 
-class StackForm extends Component {
+export class StackForm extends Component {
     constructor() {
         super();
 
         this.state = {
             title: '',
             cards: []
-        }
+        };
     }
 
     onAddCard() {
@@ -20,11 +20,11 @@ class StackForm extends Component {
 
         cards.push({ id: cards.length, prompt: '', answer: '' });
 
-        this.setState({ cards })
+        this.setState({ cards });
     }
 
     onTitleChange(title) {
-        this.setState({ title })
+        this.setState({ title });
     }
 
     onCardChange(index, value, part) {
@@ -32,7 +32,7 @@ class StackForm extends Component {
 
         cards[index][part] = value;
 
-        this.setState({ cards })
+        this.setState({ cards });
     }
 
     onSave() {
@@ -64,7 +64,7 @@ class StackForm extends Component {
                                         onChange={(event) => this.onCardChange(index, event.target.value, 'answer')}/>
                                 </FormGroup>
                             </div>
-                        )
+                        );
                     })}
                     <Button onClick={() => this.onAddCard()}>Add Card</Button>
                     {' '}
@@ -73,7 +73,7 @@ class StackForm extends Component {
                     </Link>
                 </Form>
             </div>
-        )
+        );
     }
 }
 

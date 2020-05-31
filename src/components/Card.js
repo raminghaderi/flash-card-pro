@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class Card extends Component {
     constructor() {
@@ -7,7 +7,7 @@ class Card extends Component {
 
         this.state = {
             reveal: false
-        }
+        };
     }
     render() {
         const { prompt, answer } = this.props.card;
@@ -20,7 +20,7 @@ class Card extends Component {
                     <h4>{answer}</h4>
                 </div>
             </div>
-        )
+        );
     }
 }
 

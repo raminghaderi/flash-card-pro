@@ -1,0 +1,1 @@
+export const card = { id: 0, prompt: 'Arizona', answer: 'AZ' };

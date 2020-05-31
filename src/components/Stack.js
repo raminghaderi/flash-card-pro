@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { connect } from "react-redux";
-import PropTypes from "prop-types";
-import Card from "./Card";
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import Card from './Card';
 
-class Stack extends Component {
+
+export class Stack extends Component {
     render() {
         const { title, cards } = this.props.stack;
         return (
@@ -15,17 +16,17 @@ class Stack extends Component {
                 {cards.map(card => {
                     return (
                         <Card key={card.id} card={card}/>
-                    )
+                    );
                 })}
             </div>
-        )
+        );
     }
 }
 
 function mapStateToProps(state) {
     return {
         stack: state.stack
-    }
+    };
 }
 
 Stack.propTypes = {
@@ -40,4 +41,4 @@ Stack.propTypes = {
     })
 };
 
-export default connect(mapStateToProps, null)(Stack)
+export default connect(mapStateToProps, null)(Stack);
